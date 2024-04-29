@@ -2,11 +2,15 @@ import { Text, View } from "react-native";
 import { MaterialCommunityIcons } from "@expo/vector-icons";
 import { NavigationContainer } from "@react-navigation/native";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
-
+import { GluestackUIProvider} from "@gluestack-ui/themed"
+import {config} from "@gluestack-ui/config"
+import { Button,ButtonText } from "@gluestack-ui/themed";
 function HomeScreen() {
   return (
     <View style={{ flex: 1, justifyContent: "center", alignItems: "center" }}>
-      <Text>Voila!</Text>
+      <Button action='negative'>
+      <ButtonText>Hello World</ButtonText>
+      </Button>
     </View>
   );
 }
@@ -23,6 +27,7 @@ const Tab = createBottomTabNavigator();
 
 export default function App() {
   return (
+    <GluestackUIProvider config={config}>
     <NavigationContainer>
       <Tab.Navigator>
         <Tab.Screen
@@ -37,6 +42,7 @@ export default function App() {
         />
       </Tab.Navigator>
     </NavigationContainer>
+    </GluestackUIProvider>
   );
 }
 
