@@ -1,5 +1,51 @@
 export {AlertFilledIcon} from "./AlertFilledIcon";
 
 //Default export  from @glustack-ui
-export { AddIcon, ArrowLeftIcon, ArrowRightIcon, ArrowUpIcon, ArrowDownIcon, ChevronsLeftIcon, ChevronsRightIcon, ChevronsUpDownIcon, AtSignIcon, PaperclipIcon, BellIcon, CalendarDaysIcon, MessageCircleIcon, CheckIcon, ChevronDownIcon, ChevronUpIcon, ChevronLeftIcon, ChevronRightIcon, CloseIcon, CopyIcon, TrashIcon, DownloadIcon, GripVerticalIcon, EditIcon, MailIcon, ExternalLinkIcon, MenuIcon, InfoIcon, LinkIcon, LockIcon, RemoveIcon, MoonIcon, SlashIcon, CheckCircleIcon, PhoneIcon, HelpCircleIcon, RepeatIcon, Repeat1Icon, SearchIcon, SettingsIcon, LoaderIcon, StarIcon, SunIcon, ClockIcon, UnlockIcon, EyeIcon, EyeOffIcon, AlertCircleIcon, CloseCircleIcon, ShareIcon, CircleIcon, FavouriteIcon, GlobeIcon, ThreeDotsIcon, PlayIcon
+export { AddIcon, ArrowLeftIcon, ArrowRightIcon, ArrowUpIcon, ArrowDownIcon, ChevronsLeftIcon, ChevronsRightIcon, ChevronsUpDownIcon, AtSignIcon, PaperclipIcon, BellIcon, CalendarDaysIcon, MessageCircleIcon, CheckIcon, ChevronDownIcon, ChevronUpIcon, ChevronLeftIcon, ChevronRightIcon, CloseIcon,  TrashIcon, DownloadIcon, GripVerticalIcon, EditIcon, MailIcon, ExternalLinkIcon, MenuIcon, InfoIcon, LinkIcon, LockIcon, RemoveIcon, MoonIcon, SlashIcon, CheckCircleIcon, PhoneIcon, HelpCircleIcon, RepeatIcon, Repeat1Icon, SearchIcon, SettingsIcon, LoaderIcon, StarIcon, SunIcon, UnlockIcon, EyeIcon, EyeOffIcon, AlertCircleIcon, CloseCircleIcon, ShareIcon, FavouriteIcon, GlobeIcon, ThreeDotsIcon, PlayIcon
 } from "@gluestack-ui/themed";
+
+export {AppsIcon} from "./AppIcon"
+export {ArchiveIcon}from "./ArchiveIcon"
+export {ArrowCounterClockwise} from "./ArrowCounterClockwise"
+export {ArrowCircleLeftIcon} from "./ArrowCircleLeft"
+export {ArrowCircleRight} from "./ArrowCircleRight"
+export {ArrowDropdownIcon} from "./ArrowDropdown"
+export {AttachIcon} from "./Attach"
+export {BarcodeScannerIcon} from "./BarcodeScannerIcon"
+export {BlankFileIcon} from "./BlankFileIcon"
+export {BoardHeartIcon} from "./BoardHeartIcon"
+export {BookIcon} from "./BookIcon"
+export {BoxIcon} from "./BoxIcon"
+export {BuildingsIcon} from "./BuildingIcon"
+export {BuildingMultipleIcon} from "./BuildingMultipleIcon"
+export {BuildingSingleIcon} from "./BuildingSingleIcon"
+export {CabIcon} from "./CabIcon"
+export {CalendarCheckmarkIcon} from "./CalendarCheckmarkIcon"
+export {CalendarFilled} from "./CalendarFilledIcon"
+export {CalendarIcon} from "./CalendarIcon"
+export {CalendarTodayIcon} from "./CalendarTodayIcon"
+export {CallForwardIcon} from "./CallForwardIcon"
+export {CallHoldIcon} from "./CallHoldIcon"
+export {CameraIcon} from "./CameraIcon"
+export {CamerSwitchIcon} from "./CameraSwitchIcon"
+export {ChatAddIcon} from "./ChatAddIcon"
+export {ChatHelpFilledIcon} from "./ChatHelpFilledIcon"
+export {ChatHelpIcon} from "./ChatHelpIcon"
+export {ChatIcon} from "./ChatIcon"
+export {ChatOutlinedIcon} from "./ChatOutLinedIcon"
+export {CheckmarkCircleFilledIcon} from "./CheckMarkCircleFilledIcon"
+export {CheckmarkCircleIcon} from "./CheckmarkCircleIcon"
+export {CheckmarkIcon} from "./CheckmarkIcon"
+export {ApprovalsTabIcon} from "./CheckMarkStarBurstIcon"
+export {CircleIcon} from "./CircleIcon"
+export {ClockIcon} from "./ClockIcon"
+export {ClockOutlineIcon} from "./ClockOutLineIcon"
+export {CommonFloorIcon} from "./CommonFloorIcon"
+export {CommunityIcon} from "./CommunityIcon"
+export {CompanySiteIcon} from "./CompanySiteIcon"
+export {CopyIcon} from "./CopyIcon"
+export {CustomerReferralsIcon} from "./CustomerReferralsIcon"
+export {CustomizeIcon} from "./CustomizeIcon"
+
+
+

@@ -26,7 +26,7 @@ export default function App() {
         <Tab.Screen
           name="Home"
           component={IconScreen}
-          options={{ tabBarIcon: makeIconRender("icon") }}
+          options={{ tabBarIcon: makeIconRender("home") }}
         />
         <Tab.Screen
           name="Settings"

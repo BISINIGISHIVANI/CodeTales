@@ -1,127 +1,58 @@
-import React from 'react';
-import { View } from 'react-native';
+import { View ,TouchableOpacity,Text} from 'react-native';
 import { HStack, Icon } from '@gluestack-ui/themed';
-
-import {
-    AlertIcon,
-  AddIcon,
-  ArrowLeftIcon,
-  ArrowRightIcon,
-  ArrowUpIcon,
-  ArrowDownIcon,
-  ChevronsLeftIcon,
-  ChevronsRightIcon,
-  ChevronsUpDownIcon,
-  AtSignIcon,
-  PaperclipIcon,
-  BellIcon,
-  CalendarDaysIcon,
-  MessageCircleIcon,
-  CheckIcon,
-  ChevronDownIcon,
-  ChevronUpIcon,
-  ChevronLeftIcon,
-  ChevronRightIcon,
-  CloseIcon,
-  CopyIcon,
-  TrashIcon,
-  DownloadIcon,
-  GripVerticalIcon,
-  EditIcon,
-  MailIcon,
-  ExternalLinkIcon,
-  MenuIcon,
-  InfoIcon,
-  LinkIcon,
-  LockIcon,
-  RemoveIcon,
-  MoonIcon,
-  SlashIcon,
-  CheckCircleIcon,
-  PhoneIcon,
-  HelpCircleIcon,
-  RepeatIcon,
-  Repeat1Icon,
-  SearchIcon,
-  SettingsIcon,
-  LoaderIcon,
-  StarIcon,
-  SunIcon,
-  ClockIcon,
-  UnlockIcon,
-  EyeIcon,
-  EyeOffIcon,
-  AlertCircleIcon,
-  CloseCircleIcon,
-  ShareIcon,
-  CircleIcon,
-  FavouriteIcon,
-  GlobeIcon,
-  ThreeDotsIcon,
-  PlayIcon,
-  AlertFilledIcon
-} from './Icon'; // Import all required icons
+// Import all the individual icon components
+import { 
+  CabIcon, CalendarCheckmarkIcon, CalendarFilled, CalendarIcon, CalendarTodayIcon, 
+  CallForwardIcon, CallHoldIcon, CameraIcon, CameraSwitchIcon, ChatAddIcon, 
+  ChatHelpFilledIcon, ChatHelpIcon, ChatIcon, ChatOutlinedIcon, CheckmarkCircleFilledIcon, 
+  CheckmarkCircleIcon, CheckmarkIcon, ApprovalsTabIcon, CircleIcon, ClockIcon, ClockOutlineIcon, 
+  CommonFloorIcon, CommunityIcon, CompanySiteIcon, CopyIcon, CustomerReferralsIcon, CustomizeIcon,
+  BarcodeScannerIcon, BlankFileIcon, BoardHeartIcon, BookIcon, BoxIcon, BuildingsIcon, 
+  BuildingMultipleIcon, BuildingSingleIcon, AttachIcon, ArrowDropdownIcon, ArrowCircleRight, 
+  ArrowCounterClockwise, ArrowCircleLeftIcon, AppsIcon, ArchiveIcon, AddIcon, AlertFilledIcon, 
+  ArrowLeftIcon, ArrowRightIcon, ArrowUpIcon, ArrowDownIcon, ChevronsLeftIcon, ChevronsRightIcon, 
+  ChevronsUpDownIcon, AtSignIcon, PaperclipIcon, BellIcon, CalendarDaysIcon, MessageCircleIcon, 
+  CheckIcon, ChevronDownIcon, ChevronUpIcon, ChevronLeftIcon, ChevronRightIcon, CloseIcon, 
+  TrashIcon, DownloadIcon, GripVerticalIcon, EditIcon, MailIcon, ExternalLinkIcon, MenuIcon, 
+  InfoIcon, LinkIcon, LockIcon, RemoveIcon, MoonIcon, SlashIcon, CheckCircleIcon, PhoneIcon, 
+  HelpCircleIcon, RepeatIcon, Repeat1Icon, SearchIcon, SettingsIcon, LoaderIcon, StarIcon, 
+  SunIcon, UnlockIcon, EyeIcon, EyeOffIcon, AlertCircleIcon, CloseCircleIcon, ShareIcon, 
+  FavouriteIcon, GlobeIcon, ThreeDotsIcon, PlayIcon
+} from './Icon';
 
 export function IconScreen() {
+  // Define an array containing all the icon components
+  const icons = [
+    CabIcon, CalendarCheckmarkIcon, CalendarFilled, CalendarIcon, CalendarTodayIcon, 
+    CallForwardIcon, CallHoldIcon, CameraIcon, 
+    // CameraSwitchIcon,
+    ChatAddIcon, 
+    ChatHelpFilledIcon, ChatHelpIcon, ChatIcon, ChatOutlinedIcon, CheckmarkCircleFilledIcon, 
+    CheckmarkCircleIcon, CheckmarkIcon, ApprovalsTabIcon, CircleIcon, ClockIcon, ClockOutlineIcon, 
+    CommonFloorIcon, CommunityIcon, CompanySiteIcon, CopyIcon, CustomerReferralsIcon, CustomizeIcon,
+    BarcodeScannerIcon, BlankFileIcon, BoardHeartIcon, BookIcon, BoxIcon, BuildingsIcon, 
+    BuildingMultipleIcon, BuildingSingleIcon, AttachIcon, ArrowDropdownIcon, ArrowCircleRight, 
+    ArrowCounterClockwise, ArrowCircleLeftIcon, AppsIcon, ArchiveIcon, AddIcon, AlertFilledIcon, 
+    ArrowLeftIcon, ArrowRightIcon, ArrowUpIcon, ArrowDownIcon, ChevronsLeftIcon, ChevronsRightIcon, 
+    ChevronsUpDownIcon, AtSignIcon, PaperclipIcon, BellIcon, CalendarDaysIcon, MessageCircleIcon, 
+    CheckIcon, ChevronDownIcon, ChevronUpIcon, ChevronLeftIcon, ChevronRightIcon, CloseIcon, 
+    TrashIcon, DownloadIcon, GripVerticalIcon, EditIcon, MailIcon, ExternalLinkIcon, MenuIcon, 
+    InfoIcon, LinkIcon, LockIcon, RemoveIcon, MoonIcon, SlashIcon, CheckCircleIcon, PhoneIcon, 
+    HelpCircleIcon, RepeatIcon, Repeat1Icon, SearchIcon, SettingsIcon, LoaderIcon, StarIcon, 
+    SunIcon, UnlockIcon, EyeIcon, EyeOffIcon, AlertCircleIcon, CloseCircleIcon, ShareIcon, 
+    FavouriteIcon, GlobeIcon, ThreeDotsIcon, PlayIcon
+  ];
+
   return (
     <View style={{ justifyContent: 'center' }}>
       <HStack flexWrap="wrap" alignItems="center">
-        <Icon as={AddIcon} m="$2" w="$4" h="$4" />
-        <Icon as={AlertFilledIcon} m="$2" w="$4" h="$4" />
-        <Icon as={ArrowLeftIcon} m="$2" w="$4" h="$4" />
-        <Icon as={ArrowRightIcon} m="$2" w="$4" h="$4" />
-        <Icon as={ArrowUpIcon} m="$2" w="$4" h="$4" />
-        <Icon as={ArrowDownIcon} m="$2" w="$4" h="$4" />
-        <Icon as={ChevronsLeftIcon} m="$2" w="$4" h="$4" />
-        <Icon as={ChevronsRightIcon} m="$2" w="$4" h="$4" />
-        <Icon as={ChevronsUpDownIcon} m="$2" w="$4" h="$4" />
-        <Icon as={AtSignIcon} m="$2" w="$4" h="$4" />
-        <Icon as={PaperclipIcon} m="$2" w="$4" h="$4" />
-        <Icon as={BellIcon} m="$2" w="$4" h="$4" />
-        <Icon as={CalendarDaysIcon} m="$2" w="$4" h="$4" />
-        <Icon as={MessageCircleIcon} m="$2" w="$4" h="$4" />
-        <Icon as={CheckIcon} m="$2" w="$4" h="$4" />
-        <Icon as={ChevronDownIcon} m="$2" w="$4" h="$4" />
-        <Icon as={ChevronUpIcon} m="$2" w="$4" h="$4" />
-        <Icon as={ChevronLeftIcon} m="$2" w="$4" h="$4" />
-        <Icon as={ChevronRightIcon} m="$2" w="$4" h="$4" />
-        <Icon as={CloseIcon} m="$2" w="$4" h="$4" />
-        <Icon as={CopyIcon} m="$2" w="$4" h="$4" />
-        <Icon as={TrashIcon} m="$2" w="$4" h="$4" />
-        <Icon as={DownloadIcon} m="$2" w="$4" h="$4" />
-        <Icon as={GripVerticalIcon} m="$2" w="$4" h="$4" />
-        <Icon as={EditIcon} m="$2" w="$4" h="$4" />
-        <Icon as={MailIcon} m="$2" w="$4" h="$4" />
-        <Icon as={ExternalLinkIcon} m="$2" w="$4" h="$4" />
-        <Icon as={MenuIcon} m="$2" w="$4" h="$4" />
-        <Icon as={InfoIcon} m="$2" w="$4" h="$4" />
-        <Icon as={LinkIcon} m="$2" w="$4" h="$4" />
-        <Icon as={LockIcon} m="$2" w="$4" h="$4" />
-        <Icon as={RemoveIcon} m="$2" w="$4" h="$4" />
-        <Icon as={MoonIcon} m="$2" w="$4" h="$4" />
-        <Icon as={SlashIcon} m="$2" w="$4" h="$4" />
-        <Icon as={CheckCircleIcon} m="$2" w="$4" h="$4" />
-        <Icon as={PhoneIcon} m="$2" w="$4" h="$4" />
-        <Icon as={HelpCircleIcon} m="$2" w="$4" h="$4" />
-        <Icon as={RepeatIcon} m="$2" w="$4" h="$4" />
-        <Icon as={Repeat1Icon} m="$2" w="$4" h="$4" />
-        <Icon as={SearchIcon} m="$2" w="$4" h="$4" />
-        <Icon as={SettingsIcon} m="$2" w="$4" h="$4" />
-        <Icon as={LoaderIcon} m="$2" w="$4" h="$4" />
-        <Icon as={StarIcon} m="$2" w="$4" h="$4" />
-        <Icon as={SunIcon} m="$2" w="$4" h="$4" />
-        <Icon as={ClockIcon} m="$2" w="$4" h="$4" />
-        <Icon as={UnlockIcon} m="$2" w="$4" h="$4" />
-        <Icon as={EyeIcon} m="$2" w="$4" h="$4" />
-        <Icon as={EyeOffIcon} m="$2" w="$4" h="$4" />
-        <Icon as={AlertCircleIcon} m="$2" w="$4" h="$4" />
-        <Icon as={CloseCircleIcon} m="$2" w="$4" h="$4" />
-        <Icon as={ShareIcon} m="$2" w="$4" h="$4" />
-        <Icon as={CircleIcon} m="$2" w="$4" h="$4" />
-        <Icon as={FavouriteIcon} m="$2" w="$4" h="$4" />
-        <Icon as={GlobeIcon} m="$2" w="$4" h="$4" />
-        <Icon as={ThreeDotsIcon} m="$2" w="$4" h="$4" />
-        <Icon as={PlayIcon} m="$2" w="$4" h="$4" />
+        {/* Map over the icons array to render each icon */}
+        {icons.map((IconComponent, index) => (
+          <View key={index} style={{ alignItems: 'center', margin: 10 }}>
+            <Icon as={IconComponent} m="$2" w="$4" h="$4" cursor='pointer'/>
+           
+          </View>
+        ))}
       </HStack>
     </View>
   );
