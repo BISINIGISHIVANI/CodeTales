@@ -2,18 +2,11 @@ import { Text, View } from "react-native";
 import { MaterialCommunityIcons } from "@expo/vector-icons";
 import { NavigationContainer } from "@react-navigation/native";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
-import { GluestackUIProvider} from "@gluestack-ui/themed"
+import { GluestackUIProvider, HStack} from "@gluestack-ui/themed"
 import {config} from "@gluestack-ui/config"
-import { Button,ButtonText } from "@gluestack-ui/themed";
-function HomeScreen() {
-  return (
-    <View style={{ flex: 1, justifyContent: "center", alignItems: "center" }}>
-      <Button action='negative'>
-      <ButtonText>Hello World</ButtonText>
-      </Button>
-    </View>
-  );
-}
+
+import {IconScreen} from "./IconTab"
+
 
 function SettingsScreen() {
   return (
@@ -32,8 +25,8 @@ export default function App() {
       <Tab.Navigator>
         <Tab.Screen
           name="Home"
-          component={HomeScreen}
-          options={{ tabBarIcon: makeIconRender("home") }}
+          component={IconScreen}
+          options={{ tabBarIcon: makeIconRender("icon") }}
         />
         <Tab.Screen
           name="Settings"
