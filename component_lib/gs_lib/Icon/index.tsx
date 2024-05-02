@@ -47,5 +47,29 @@ export {CopyIcon} from "./CopyIcon"
 export {CustomerReferralsIcon} from "./CustomerReferralsIcon"
 export {CustomizeIcon} from "./CustomizeIcon"
 
+// D category
+
+export { default as DeleteIcon } from './Delete';
+export {default as DeleteFilledIcon} from "./DeleteFilled"
+export {default as DirectionsIcon } from "./Directions"
+export {default as DirectWalkInIcon} from "./DirectWalkIn"
+export {default as DismissBareIcon} from "./Dismiss"
+export {default as DismissCircleIcon}from "./DismissCircle"
+export {default as DismissCircleOutlineIcon}from "./DismissCircleOutlineIcon"
+export {default as DismissCirclePillIcon}from "./DismissCirclePill"
+export {default as DismissIcon } from "./Dismiss"
+export {default as DocFileIcon} from "./DocFile"
+export {default as DocumentIcon}from "./Document"
+export {default as DocumentArrowDownIcon}from "./DocumentArrowDown"
+export {default as DocumentArrowUpIcon}from "./DocumentArrowUp"
+export {default as DocumentBulletListFilledIcon}from "./DocumentBulletListFilled"
+export {default as DocumentMultipleIcon}from "./DocumentMultiple"
+export {default as DocumentMultipleFilledIcon}from "./DocumentMultipleFilled"
+export {default as DocumentSyncIcon}from "./DocumentSync"
+export {default as DocumentTableIcon}from "./DocumentTable"
+export {default as DocumentToolboxIcon}from "./DocumentToolbox"
+export {default as DraftIcon}from "./Draft"
+export {default as DrawerArrowDownloadIcon}from "./DrawerArrowDownload"
+export {default as DumbbellIcon}from "./Dumbbell"
 
 
